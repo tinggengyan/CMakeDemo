@@ -1,0 +1,15 @@
+%/usr/bin/clang
+%c -std=c11
+%cpp -std=c++14
+%h -x
+%h c++-header
+
+# system include 
+-I/usr/local/include
+-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks
+
+# custom incldue
+-Ilib/inc
+-Ilib/src
+-Iexample/inc
+-Iexample/src
