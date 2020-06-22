@@ -8,13 +8,7 @@ project(hello)
 set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory (lib)
+add_subdirectory (example)
+add_subdirectory (example2)
 
-# inlcude headers
-include_directories(./lib/inc)
-
-aux_source_directory(./example/src hello_src)
-
-add_executable(hello ${hello_src})
-
-target_link_libraries(hello lib_demo)
 
